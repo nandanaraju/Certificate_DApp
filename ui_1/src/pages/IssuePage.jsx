@@ -32,36 +32,35 @@ const IssuePage = () => {
     
     return (
         <>
-        
-        <form  onSubmit={issueCertificate}>
-        <div className="flex justify-between space-x-4 mb-4 ml-4 mt-8">
+        <nav className='bg-black h-16 flex items-center'>
+                <div className="flex justify-between w-full px-4">
                     <button 
                         onClick={connectToMetamask} 
-                        className="rounded-md text-white bg-red-500 border-none font-serif h-10 px-4"
+                        className="rounded-md text-white bg-blue-500 border-none font-serif h-10 px-4 hover:bg-blue-600"
                     >
                         Connect To Metamask
                     </button>
-                    <div className='space-x-4 mr-4'>
-
-                    
-                    <Link to="/">
-                        <input 
-                            type="button" 
-                            name="home" 
-                            value="Home"
-                            className="rounded-md text-white bg-blue-500 border-none font-serif h-10 px-4"
-                        />
-                    </Link>
-                    <Link to="/issue">
-                        <input 
-                            type="button" 
-                            name="issue" 
-                            value="Issue Certificate"
-                            className="rounded-md text-white bg-blue-500 border-none font-serif h-10 px-4"
-                        />
-                    </Link>
+                    <div className='space-x-4'>
+                        <Link to="/">
+                            <button 
+                                className="text-white bg-transparent border-none font-serif h-10 px-4 hover:underline"
+                            >
+                                Home
+                            </button>
+                        </Link>
+                        <Link to="/issue">
+                            <button 
+                                className="text-white bg-transparent border-none font-serif h-10 px-4 hover:underline"
+                            >
+                                Issue Certificate
+                            </button>
+                        </Link>
                     </div>
                 </div>
+            </nav>
+        <div className='bg-gray-200 pb-16'>
+        <form  onSubmit={issueCertificate}>
+       
         <h2 className=" text-2xl text-left font-bold font-serif">Certificate Dapp</h2>
 
         <div className=" ml-10 mt-12 mr-10  max-w-lg ">
@@ -119,6 +118,7 @@ const IssuePage = () => {
         </div>
 
     </form>
+    </div>
         </>
     )
 }
