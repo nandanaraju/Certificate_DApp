@@ -1,6 +1,6 @@
-# 🎓 CertiLink DApp: Your Digital Credential Hub
+# 🎓 Certi DApp: Your Digital Credential Hub
 
-Welcome to the *CertiLink DApp*! 🌟 This decentralized application (DApp) provides a seamless, secure, and fun way to issue and verify certificates on the blockchain. Say goodbye to fake certificates and hello to trust and transparency! 🚀
+Welcome to the *Certi DApp*! 🌟 This decentralized application (DApp) provides a seamless, secure, and fun way to issue and verify certificates on the blockchain. Say goodbye to fake certificates and hello to trust and transparency! 🚀
 
 ![CertiLink DApp](https://github.com/your-username/certificate-dapp/blob/main/assets/Dapp.png)
 
@@ -10,7 +10,7 @@ Welcome to the *CertiLink DApp*! 🌟 This decentralized application (DApp) prov
 
 Check out our live demo! 🎬👇
 
-[![Watch the video](https://github.com/Neethu-Muthu/Certificate-DApp/blob/main/UI/src/assets/images/Untitled%20design.png)](link)
+[![Watch the video](https://github.com/nandanaraju/Certificate_DApp/blob/main/ui_1/src/assets/images/video.jpeg)](https://drive.google.com/file/d/1MD0OZyQAfJBNTM6b9nvOOXsVkenUyR37/view?usp=sharing)
 
 ---
 
@@ -42,8 +42,8 @@ Before you get started, make sure you have the following:
 1. *Clone the repository*:
 
    bash
-   git clone https://github.com/your-username/certificate-dapp.git
-   cd certificate-dapp
+   git clone https://github.com/your-username/certificate_dapp.git
+   cd certificate_dapp
 
 2. **Install dependencies**:
 
@@ -69,11 +69,11 @@ Before you get started, make sure you have the following:
 
 The DApp is designed to be user-friendly and interactive. Here’s what it offers:
 
-- **🏠 Home Page**: Connect your Metamask wallet and easily search for certificates by ID.
+- **🏠 Index Page**: Connect your Metamask wallet and easily search for certificates by ID.
   
 - **📝 Issue Page**: Admins can issue new certificates by filling out a simple form with course details, candidate name, grade, and issue date.
   
-- **📜 Certificate Page**: Displays detailed certificate information fetched directly from the blockchain.
+- **📜 View Page**: Displays detailed certificate information fetched directly from the blockchain.
 
 ---
 
@@ -93,24 +93,14 @@ const signer = await provider.getSigner();
 Admins can issue new certificates through the **Issue Certificate** page:
 
 javascript
-const tx = await instance.issue(cerid, cname, course, grade, date);
+const tx = await instance.issue(id, name, course, grade, date);
 
 ### Verify a Certificate
 
-Users can verify certificates by entering the ID on the *Home* page. The data is securely fetched from the blockchain!
+Users can verify certificates by entering the ID on the *Index* page. The data is securely fetched from the blockchain!
 
 ---
 
-## 🎨 Screenshots
-
-### 🏠 Home Page
-![Home Page](https://github.com/Neethu-Muthu/Certificate-DApp/blob/main/UI/src/assets/images/home.png)
-
-### 📝 Issue Certificate Page
-![Issue Certificate Page](https://github.com/Neethu-Muthu/Certificate-DApp/blob/main/UI/src/assets/images/issueCert.png)
-
-### 📜 Certificate Display
-![Certificate Display](https://github.com/Neethu-Muthu/Certificate-DApp/blob/main/UI/src/assets/images/view.png)
 
 ---
 
