@@ -14,60 +14,57 @@ const IndexPage = () => {
 
     return (
         <>
-            <form>
-                <div className="flex justify-between space-x-4 mb-4 ml-4 mt-8">
+            <nav className='bg-black h-16 flex items-center'>
+                <div className="flex justify-between w-full px-4">
                     <button 
                         onClick={connectToMetamask} 
-                        className="rounded-md text-white bg-red-500 border-none font-serif h-10 px-4"
+                        className="rounded-md text-white bg-blue-500 border-none font-serif h-10 px-4 hover:bg-blue-600"
                     >
                         Connect To Metamask
                     </button>
-                    <div className='space-x-4 mr-4'>
-
-                    
-                    <Link to="/">
-                        <input 
-                            type="button" 
-                            name="home" 
-                            value="Home"
-                            className="rounded-md text-white bg-blue-500 border-none font-serif h-10 px-4"
-                        />
-                    </Link>
-                    <Link to="/issue">
-                        <input 
-                            type="button" 
-                            name="issue" 
-                            value="Issue Certificate"
-                            className="rounded-md text-white bg-blue-500 border-none font-serif h-10 px-4"
-                        />
-                    </Link>
+                    <div className='space-x-4'>
+                        <Link to="/">
+                            <button 
+                                className="text-white bg-transparent border-none font-serif h-10 px-4 hover:underline"
+                            >
+                                Home
+                            </button>
+                        </Link>
+                        <Link to="/issue">
+                            <button 
+                                className="text-white bg-transparent border-none font-serif h-10 px-4 hover:underline"
+                            >
+                                Issue Certificate
+                            </button>
+                        </Link>
                     </div>
                 </div>
-
-                <div>
-                    <h1 className="pt-16 text-4xl text-center font-bold font-serif">Certificate Dapp</h1>
-                    <img src={img1} className="size-60 mx-auto mt-12 mb-10" />
-                </div>
-                <div className="text-center">
-                    <input 
-                        type="text" 
-                        name="textname" 
-                        required 
-                        placeholder="Enter Certificate Id to view" 
-                        className="border-2 border-sky-400" 
-                        value={id} 
-                        onChange={(e) => setId(e.target.value)}
-                    />
-                    <Link to={`/view/${id}`}>
-                        <input 
-                            type="button" 
-                            name="search" 
-                            value="Search"
-                            className="text-white bg-blue-500 w-20 size-10"
-                        />
-                    </Link>
-                </div>
-            </form>
+            </nav>
+            <div className='bg-gray-200 pb-[220px]'>
+            <div>
+                <h1 className="pt-16 text-4xl text-center font-bold font-serif">Certificate Dapp</h1>
+                <img src={img1} className="size-60 mx-auto mt-12 mb-10" alt="Dapp"/>
+            </div>
+            <div className="text-center">
+                <input 
+                    type="text" 
+                    name="textname" 
+                    required 
+                    placeholder="Enter Certificate Id to view" 
+                    className="border-2 border-sky-400 px-4 py-2 rounded-lg" 
+                    value={id} 
+                    onChange={(e) => setId(e.target.value)}
+                />
+                <Link to={`/view/${id}`}>
+                    <button 
+                        type="button" 
+                        className="text-white bg-blue-500 hover:bg-blue-600 w-20 h-10 rounded-lg mt-2"
+                    >
+                        Search
+                    </button>
+                </Link>
+            </div>
+            </div>
         </>
     )
 }
