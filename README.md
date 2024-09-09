@@ -3,7 +3,7 @@
 Welcome to the *Certi DApp*! 🌟 This decentralized application (DApp) provides a seamless, secure, and fun way to issue and verify certificates on the blockchain. Say goodbye to fake certificates and hello to trust and transparency! 🚀
 
 
-[![CertiLink DApp](https://github.com/nandanaraju/Certificate-DApp/blob/main/UI/src/assets/images/Dapp.png)]([link](https://drive.google.com/file/d/167RLsBaZJdEXqf8eKmDptA54WelqqrYX/view?usp=sharing))
+[![CertiLink DApp](https://github.com/nandanaraju/Certificate-DApp/blob/main/UI/src/assets/images/Dapp.png)]([https://drive.google.com/file/d/167RLsBaZJdEXqf8eKmDptA54WelqqrYX/view?usp=sharing])
 
 ---
 
