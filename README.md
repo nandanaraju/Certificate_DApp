@@ -10,7 +10,7 @@ Welcome to the *Certi DApp*! 🌟 This decentralized application (DApp) provides
 
 Check out our live demo! 🎬👇
 
-[![Watch the video](https://github.com/nandanaraju/Certificate_DApp/blob/main/ui_1/src/assets/images/video.jpeg)](https://drive.google.com/file/d/1MD0OZyQAfJBNTM6b9nvOOXsVkenUyR37/view?usp=sharing)
+[![Watch the video](https://github.com/nandanaraju/Certificate_DApp/blob/main/ui_1/src/assets/images/video.jpeg)]([https://drive.google.com/file/d/1MD0OZyQAfJBNTM6b9nvOOXsVkenUyR37/view?usp=sharing])
 
 ---
 
